@@ -8,7 +8,6 @@ const AppRoutes = () => {
           <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/planta/:id" element={<Planta />} />
-               <Route path="*" element={<Navigate to="/" />} />
           </Routes>
      );
 };
