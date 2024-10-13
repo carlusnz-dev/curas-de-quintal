@@ -1,0 +1,32 @@
+footer {
+    margin-top: 150px;
+    background-color: #306b12;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e3e3e3;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .social a {
+    margin: 0 10px;
+    font-size: 1.9em;
+}

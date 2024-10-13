@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "nomePopular": "Aroeira",
+    "nomeCientifico": "Schinus terebinthifolia",
+    "indicacoes": "Anti-inflamatório, cicatrizante, tratamento de infecções e doenças respiratórias.",
+    "formasUso": "Chá das folhas, infusão da casca, aplicação direta de resina.",
+    "origem": "Utilizada por povos indígenas, especialmente os Tupis, e difundida entre comunidades tradicionais do semiárido nordestino.",
+    "imagem": "assets/imgs/plantas/aroeira.jpg"
+  },
+  {
+    "id": 2,
+    "nomePopular": "Jatobá",
+    "nomeCientifico": "Hymenaea courbaril",
+    "indicacoes": "Fortalecedor, tratamento de problemas respiratórios, tônico.",
+    "formasUso": "Infusão da casca, uso da resina e polpa do fruto.",
+    "origem": "Tradicionalmente usado por indígenas da região nordeste e comunidades quilombolas."
+  },
+  {
+    "id": 3,
+    "nomePopular": "Cipó de Caboclo",
+    "nomeCientifico": "Davilla rugosa",
+    "indicacoes": "Diurético, ajuda a eliminar toxinas, usada no tratamento de problemas renais.",
+    "formasUso": "Chá das folhas e caules.",
+    "origem": "Utilizado por populações indígenas e posteriormente por comunidades ribeirinhas e sertanejas."
+  },
+  {
+    "id": 4,
+    "nomePopular": "Catingueira",
+    "nomeCientifico": "Caesalpinia pyramidalis",
+    "indicacoes": "Anti-inflamatório, cicatrizante, usado para tratar feridas e febres.",
+    "formasUso": "Chá das cascas e folhas.",
+    "origem": "Usado por povos indígenas locais e adotado pelos sertanejos no semiárido."
+  },
+  {
+    "id": 5,
+    "nomePopular": "Quebra-Pedra",
+    "nomeCientifico": "Phyllanthus niruri",
+    "indicacoes": "Tratamento de cálculos renais, diurético, anti-inflamatório.",
+    "formasUso": "Chá das folhas.",
+    "origem": "Com uso difundido pelas comunidades rurais, seu conhecimento veio de tradições indígenas."
+  },
+  {
+    "id": 6,
+    "nomePopular": "Umburana",
+    "nomeCientifico": "Amburana cearensis",
+    "indicacoes": "Bronquite, asma, reumatismo.",
+    "formasUso": "Chá da casca e folhas, uso da semente como tônico.",
+    "origem": "Conhecimento indígena amplamente difundido no sertão nordestino."
+  },
+  {
+    "id": 7,
+    "nomePopular": "Mastruz",
+    "nomeCientifico": "Dysphania ambrosioides",
+    "indicacoes": "Vermífugo, expectorante, cicatrizante.",
+    "formasUso": "Chá ou maceração das folhas, cataplasma.",
+    "origem": "Planta de origem mexicana, trazida pelos colonizadores."
+  },
+  {
+    "id": 8,
+    "nomePopular": "Erva-cidreira",
+    "nomeCientifico": "Lippia alba",
+    "indicacoes": "Calmante, possui ações digestivas.",
+    "formasUso": "Chá das folhas.",
+    "origem": "Amplamente usada pelos indígenas e, posteriormente, por comunidades rurais."
+  },
+  {
+    "id": 9,
+    "nomePopular": "Capim-santo",
+    "nomeCientifico": "Cymbopogon citratus",
+    "indicacoes": "Calmante, digestivo, anti-inflamatório.",
+    "formasUso": "Infusão das folhas.",
+    "origem": "Originária da Ásia, sua difusão ocorreu por meio dos colonizadores."
+  },
+  {
+    "id": 10,
+    "nomePopular": "Marmeleiro",
+    "nomeCientifico": "Cydonia oblonga",
+    "indicacoes": "Tratamento de inflamações, problemas de pele.",
+    "formasUso": "Chá da casca, aplicação externa.",
+    "origem": "Usado por indígenas e comunidades rurais no bioma Caatinga."
+  },
+  {
+    "id": 11,
+    "nomePopular": "Algodão",
+    "nomeCientifico": "Gossypium herbaceum",
+    "indicacoes": "Tratar problemas de pele, cicatrização.",
+    "formasUso": "Óleo extraído das sementes, folhas maceradas.",
+    "origem": "Conhecido dos povos indígenas e cultivado pelas populações sertanejas."
+  },
+  {
+    "id": 12,
+    "nomePopular": "Jurubeba",
+    "nomeCientifico": "Solanum paniculatum",
+    "indicacoes": "Tônico, problemas digestivos e relacionados ao fígado.",
+    "formasUso": "Chá das folhas e frutos.",
+    "origem": "Utilizada por indígenas brasileiros e difundida na Caatinga."
+  },
+  {
+    "id": 13,
+    "nomePopular": "Boldo",
+    "nomeCientifico": "Peumus boldus",
+    "indicacoes": "Digestivo, problemas do fígado.",
+    "formasUso": "Chá das folhas.",
+    "origem": "Originário do Chile, difundido pelos sertanejos nordestinos."
+  },
+  {
+    "id": 14,
+    "nomePopular": "Malvão",
+    "nomeCientifico": "Plectranthus thyrsoides",
+    "indicacoes": "Expectorante, tosse, bronquite, infecções ginecológicas.",
+    "formasUso": "Chá das folhas.",
+    "origem": "Originário de regiões tropicais da África e Índia."
+  },
+  {
+    "id": 15,
+    "nomePopular": "Coentro",
+    "nomeCientifico": "Coriandrum sativum",
+    "indicacoes": "Digestivo, calmante, antibacteriana.",
+    "formasUso": "Uso culinário, sementes e chá das folhas.",
+    "origem": "Originário da região mediterrânea, introduzido no Brasil."
+  },
+  {
+    "id": 16,
+    "nomePopular": "Babosa",
+    "nomeCientifico": "Aloe vera",
+    "indicacoes": "Cicatrizante, tratamento de queimaduras e inflamações.",
+    "formasUso": "Aplicação tópica do gel, suco da planta.",
+    "origem": "Nativa da África, amplamente difundida por povos africanos e europeus."
+  },
+  {
+    "id": 17,
+    "nomePopular": "Romã",
+    "nomeCientifico": "Punica granatum",
+    "indicacoes": "Tratamento de dores de garganta, anti-inflamatório.",
+    "formasUso": "Chá das cascas, gargarejo.",
+    "origem": "Originária da Ásia, trazida pelos colonizadores."
+  },
+  {
+    "id": 18,
+    "nomePopular": "Eucalipto",
+    "nomeCientifico": "Eucalyptus globulus Labill",
+    "indicacoes": "Expectorante, problemas respiratórios.",
+    "formasUso": "Inalação do vapor ou chá das folhas.",
+    "origem": "Introduzido da Austrália e adaptado ao clima semiárido."
+  },
+  {
+    "id": 19,
+    "nomePopular": "Quebra-facão",
+    "nomeCientifico": "Croton conduplicatus",
+    "indicacoes": "Estimulante, digestivo.",
+    "formasUso": "Chá das folhas.",
+    "origem": "Nativa do Brasil, ligada ao conhecimento tradicional."
+  },
+  {
+    "id": 20,
+    "nomePopular": "Noni",
+    "nomeCientifico": "Morinda citrifolia",
+    "indicacoes": "Fortalecimento imunológico, problemas digestivos.",
+    "formasUso": "Suco do fruto.",
+    "origem": "Originário do Sudeste Asiático."
+  },
+  {
+    "id": 21,
+    "nomePopular": "Goiabeira",
+    "nomeCientifico": "Psidium guajava",
+    "indicacoes": "Tratamento de diarreia, problemas digestivos.",
+    "formasUso": "Chá das folhas e cascas.",
+    "origem": "Nativa da América do Sul, usada por indígenas."
+  },
+  {
+    "id": 22,
+    "nomePopular": "Hortelã",
+    "nomeCientifico": "Mentha spicata",
+    "indicacoes": "Digestivo, calmante.",
+    "formasUso": "Chá das folhas, inalação de infusão, xarope.",
+    "origem": "Originária da Europa e Ásia, trazida pelos colonizadores."
+  },
+  {
+    "id": 23,
+    "nomePopular": "Melão-de-são-caetano",
+    "nomeCientifico": "Momordica charantia L.",
+    "indicacoes": "Tratamento de diabetes, problemas de pele, vermífugo.",
+    "formasUso": "Chá das folhas e frutos.",
+    "origem": "Introduzido no Brasil pelos escravos africanos."
+  },
+  {
+    "id": 24,
+    "nomePopular": "Mandacaru",
+    "nomeCientifico": "Cereus jamacaru",
+    "indicacoes": "Auxilia no tratamento de tosse, bronquite e problemas respiratórios.",
+    "formasUso": "Infusões das flores e caule.",
+    "origem": "O uso medicinal do Mandacaru começou com os povos indígenas do semiárido nordestino."
+  },
+  {
+    "id": 25,
+    "nomePopular": "Alecrim",
+    "nomeCientifico": "Salvia rosmarinus",
+    "indicacoes": "Estimulante, melhora a memória, digestivo, anti-inflamatório.",
+    "formasUso": "Chá das folhas, infusão para banhos, uso culinário.",
+    "origem": "Originário do Mediterrâneo, trazido ao Brasil pelos colonizadores."
+  }
+]

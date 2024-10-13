@@ -1,0 +1,120 @@
+.btn-link {
+    background-color: #306b12;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 5px 100px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #fff;
+    color: #306b12;
+    border: 1px solid #306b12;
+    border-radius: 70px 15px 54px 29px;
+}
+
+.btn-link:active {
+    background-color: #306b12;
+    color: #fff;
+    border: none;
+}
+
+#titleRow {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchContainer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: #e3e3e3;
+}
+
+#searchContainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchContainer input {
+    padding: 10px;
+    border: none;
+    border-radius: 50px 0 0 70px;
+}
+
+#plantList {
+    display: block;
+    margin: 130px auto;
+}
+
+#plantList .card .btn-link {
+    margin: 17px auto;
+    width: 100%;
+}
+
+#plantList .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#aboutContainer {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutContainer .plant {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .btn-link {
+        padding: 5px 50px;
+    }
+
+    #titleRow {
+        height: 75vh;
+    }
+
+    #searchContainer {
+        padding: 20px;
+    }
+
+    #searchContainer input {
+        padding: 5px;
+    }
+
+    #plantList {
+        margin: 100px auto;
+    }
+
+    #plantList .card img {
+        height: 200px;
+    }
+
+    #aboutContainer {
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #aboutContainer .plant {
+        width: 100%;
+        position: relative;
+    }
+}
