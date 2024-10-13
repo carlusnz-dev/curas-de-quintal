@@ -25,8 +25,12 @@ const Planta = () => {
      }
 
      const carregarImagem = (nomePopular) => {
-          const caminhoImagem = `/assets/imgs/plantas/${formatarNomeParaCaminho(nomePopular)}.jpg`;
-          return caminhoImagem; // Caminho direto para a imagem na pasta public
+          try {
+               return require(`../assets/imgs/plantas/${formatarNomeParaCaminho(nomePopular)}.jpg`);
+          }
+          catch (error) {
+               return require("../logo - CDC.png");
+          }
      }
 
      return (

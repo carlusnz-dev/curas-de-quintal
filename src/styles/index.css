@@ -8,6 +8,7 @@
 
 body {
     background-color: #f0f0f0;
+    min-width: 392px;
 }
 
 .dancing-script {

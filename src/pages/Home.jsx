@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Suspense} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo - CDC.png";
 import plantasData from "../data/plantas.json";
@@ -6,8 +6,8 @@ import "../styles/Home.css";
 import Fuse from "fuse.js";
 import { Modal, Button } from "react-bootstrap";
 import { Canvas } from "@react-three/fiber";
-import {OrbitControls, Environment, ContactShadows} from "@react-three/drei";
-import Plant from "../components/Plant";
+import {ContactShadows, Environment} from "@react-three/drei";
+import Scene from "../components/Scene";
 
 // Função para remover acentos, espaços e transformar em minúsculas e underscore
 const formatarNomeParaCaminho = (nome) => {
@@ -84,8 +84,12 @@ export default function Home() {
      };
 
      const carregarImagem = (nomePopular) => {
-          const caminhoImagem = `/assets/imgs/plantas/${formatarNomeParaCaminho(nomePopular)}.jpg`;
-          return caminhoImagem;
+          try {
+               return require(`../assets/imgs/plantas/${formatarNomeParaCaminho(nomePopular)}.jpg`);
+          }
+          catch (error) {
+               return require("../logo - CDC.png");
+          }
      }
 
      return (
@@ -109,7 +113,7 @@ export default function Home() {
                          <div className="row">
                               <div className="col-md-6 align-self-center text-center">
                                    <h2>Encontre a cura para o seu problema</h2>
-                                   <p>Busque por plantas e animais da fauna nordestina e descubra as propriedades medicinais de cada um.</p>
+                                   <p>Busque por plantas da fauna nordestina e descubra as propriedades medicinais de cada um.</p>
                               </div>
                               <div className="col-md-6 align-self-center">
                                    <form onSubmit={realizarBusca}>
@@ -134,7 +138,7 @@ export default function Home() {
                     <p className="text-center mb-3">Conheça algumas das plantas disponíveis em nosso acervo:</p>
                     <div className="row">
                          {plantasExibidas.map((planta, index) => (
-                              <div className="col-lg-4 col-md-6 mb-4" key={planta.id}>
+                              <div className="col-lg-4 mx-auto col-md-6 mb-4" key={planta.id}>
                                    <div className="card border-0 shadow-lg rounded-5">
                                         <div className="card-body">
                                              <img
@@ -163,26 +167,23 @@ export default function Home() {
                               <div className="col-md-6 col-12 align-self-center">
                                    <h2>Sobre o Projeto</h2>
                                    <p>
-                                        O projeto Curas de Quintal é uma iniciativa que visa resgatar o conhecimento
-                                        tradicional
-                                        sobre as propriedades medicinais das plantas e animais da fauna nordestina.
-                                        Através de um
-                                        acervo digital, disponibilizamos informações sobre as espécies mais comuns da
-                                        região,
-                                        suas indicações terapêuticas e formas de uso.
-                                        Este projeto é totalmente desenvolvido pelos alunos: Tatiane Nunes, Luís Miguel e Carlos Antunes,
-                                        alunos do 3º Informática do Instituto Federal de Educação, Ciência e Tecnologia do Piauí,
-                                        Campus São Raimundo Nonato.
+                                        Curas de quintal é um projeto sobre o conhecimento tradicional de plantas medicinais da Caatinga.
+                                        Nesse vasto quintal, fomentamos o conhecimento sobre plantas medicinais no Território da Cidadania
+                                        Serra da Capivara. Os alunos autores Tatiane Nunes, Carlos Alberto Antunes e Luis Miguel Sousa
+                                        pretendem abordar sobre plantas medicinais, conhecimento tradicional e Caatinga e o que tem de
+                                        ciência nisso tudo. Esse projeto foi desenvolvido para a Feira de Ciências do Instituto Federal
+                                        do Piauí - Campus São Raimundo Nonato, II MUV - Ciência em Movimento, e é orientado pela professora
+                                        e bióloga Laís Neri. Vamos colher boas curas nesse quintal?
                                    </p>
                                    <Link to="/sobre" className="btn btn-link">Saiba mais</Link>
                               </div>
-                              <div className="col-md-6 col-12" style={{height: "50vh"}}>
+                              <div className="col-md-6 col-12">
                                    <div className="plant">
-                                        <Canvas camera={{position: [10, 3, 0], fov: 60, rotation: [0, 1, 0.4]}}>
+                                        <Canvas camera={{ position: [10, 3, 0], fov: 11 }} style={{ height: "650px" }}>
                                              <ambientLight intensity={0.5}/>
                                              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1}/>
                                              <pointLight position={[-10, -10, -10]}/>
-                                             <Plant/>
+                                             <Scene/>
                                              <Environment preset="sunset"/>
                                         </Canvas>
                                    </div>

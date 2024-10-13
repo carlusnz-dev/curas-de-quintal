@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .btn-link {
     background-color: #306b12;
     color: #fff;
@@ -74,11 +78,8 @@
 }
 
 #aboutContainer .plant {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
     height: 100%;
+    width: 100%;
 }
 
 /* media queries */
@@ -99,6 +100,10 @@
         padding: 5px;
     }
 
+    #searchContainer .btn-link {
+        padding: 5px 50px;
+    }
+
     #plantList {
         margin: 100px auto;
     }
@@ -113,8 +118,13 @@
         text-align: center;
     }
 
-    #aboutContainer .plant {
-        width: 100%;
-        position: relative;
-    }
+    /*#aboutContainer .plant {*/
+    /*    position: absolute;*/
+    /*    z-index: -1;*/
+    /*    top: 0;*/
+    /*    right: 0;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    transform: rotate(10deg) translate(-20%, -120%) scale(1.4);*/
+    /*}*/
 }
