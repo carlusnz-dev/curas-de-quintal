@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/curas-de-quintal/static/css/main.009a79da.css",
-    "main.js": "/curas-de-quintal/static/js/main.524d7739.js",
+    "main.css": "/curas-de-quintal/static/css/main.4a1dcec5.css",
+    "main.js": "/curas-de-quintal/static/js/main.6c7c8350.js",
     "static/js/453.e692bb4f.chunk.js": "/curas-de-quintal/static/js/453.e692bb4f.chunk.js",
     "static/media/logo - CDC.png": "/curas-de-quintal/static/media/logo - CDC.6e89e7a6601810eb01bd.png",
     "static/media/cipo_de_cabloco2.jpg": "/curas-de-quintal/static/media/cipo_de_cabloco2.6f1dd532b043b1a49136.jpg",
@@ -40,12 +40,12 @@
     "static/media/aroeira.jpg": "/curas-de-quintal/static/media/aroeira.6e7c1e79fdd994c22a03.jpg",
     "static/media/mastruz.jpg": "/curas-de-quintal/static/media/mastruz.dd077276ec37a6981d28.jpg",
     "index.html": "/curas-de-quintal/index.html",
-    "main.009a79da.css.map": "/curas-de-quintal/static/css/main.009a79da.css.map",
-    "main.524d7739.js.map": "/curas-de-quintal/static/js/main.524d7739.js.map",
+    "main.4a1dcec5.css.map": "/curas-de-quintal/static/css/main.4a1dcec5.css.map",
+    "main.6c7c8350.js.map": "/curas-de-quintal/static/js/main.6c7c8350.js.map",
     "453.e692bb4f.chunk.js.map": "/curas-de-quintal/static/js/453.e692bb4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.009a79da.css",
-    "static/js/main.524d7739.js"
+    "static/css/main.4a1dcec5.css",
+    "static/js/main.6c7c8350.js"
   ]
 }
