@@ -129,7 +129,7 @@ export default function Home() {
                               start: "top 80%", // Inicia quando o card estiver 80% dentro da viewport
                               end: "bottom 20%", // Termina quando o card estiver 20% fora da viewport
                               toggleActions: "play none none reverse", // Reproduzir ao entrar, reverter ao sair
-                              markers: true,
+                              markers: false,
                          },
                     });
                }
