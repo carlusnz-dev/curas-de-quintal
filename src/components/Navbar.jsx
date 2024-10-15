@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
 import logo from "../logo - CDC.png";
 
 export default function Navbar() {
      return (
-          <nav className="navbar navbar-expand-md navbar-light bg-light">
+          <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
                <div className="container">
                     <Link className="navbar-brand d-block d-md-none" to="/">
                          <img src={logo} alt={"Logotipo do projeto Curas de Quintal"} height={70}/>
@@ -18,7 +19,7 @@ export default function Navbar() {
                                    <Link className="nav-link" to="/">Início</Link>
                               </li>
                               <li className={"nav-item"}>
-                                   <Link className="nav-link" to="/">Sobre</Link>
+                                   <Link className="nav-link" to="/sobre">Sobre</Link>
                               </li>
                               <li className={"nav-item d-none d-md-block"}>
                                    <Link className="nav-link" to="/">

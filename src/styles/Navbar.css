@@ -1,0 +1,36 @@
+.navbar {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav {
+    line-height: 70px;
+}
+
+.navbar-nav a {
+    color: #525252;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 15px;
+    margin: 0 5px;
+}
+
+.navbar-nav a:hover {
+    color: #108111;
+    font-weight: 400;
+}
+
+.navbar-nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #108111;
+    transition: width .3s;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}

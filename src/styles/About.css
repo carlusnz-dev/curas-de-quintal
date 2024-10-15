@@ -1,0 +1,44 @@
+img {
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    img {
+        object-fit: cover;
+        aspect-ratio: 1 / 1; /* Aspect ratio 1:1 para dispositivos móveis */
+    }
+}
+
+@media (min-width: 769px) {
+    img {
+        aspect-ratio: auto; /* Aspect ratio padrão em telas maiores */
+    }
+}
+
+h1.title {
+    color: #3f9d2a;
+    font-weight: bold;
+}
+
+h2.display-4 {
+    color: #264653;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #3d5b18;
+}
+
+/*.fade-in {*/
+/*    opacity: 0;*/
+/*    transform: translateY(20px);*/
+/*}*/
+
+img.img-fluid {
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+img.img-fluid:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}

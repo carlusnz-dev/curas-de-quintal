@@ -30,6 +30,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(-400px);
+    opacity: 0;
 }
 
 #searchContainer {
@@ -62,6 +64,11 @@ body {
     margin: 17px auto;
     width: 100%;
 }
+
+/*#plantList #plantCard {*/
+/*    transform: translateY(-400px);*/
+/*    opacity: 0;*/
+/*}*/
 
 #plantList .card img {
     width: 100%;

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useLayoutEffect, useRef} from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo - CDC.png";
 import plantasData from "../data/plantas.json";
@@ -6,7 +6,9 @@ import "../styles/Home.css";
 import Fuse from "fuse.js";
 import { Modal, Button } from "react-bootstrap";
 import { Canvas } from "@react-three/fiber";
-import {ContactShadows, Environment} from "@react-three/drei";
+import { Environment } from "@react-three/drei";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Scene from "../components/Scene";
 
 // Função para remover acentos, espaços e transformar em minúsculas e underscore
@@ -32,6 +34,9 @@ export default function Home() {
      const [modalShow, setModalShow] = useState(false); // Estado para controlar a exibição do modal
      const [resultadosBusca, setResultadosBusca] = useState([]); // Estado para armazenar os resultados da busca
      const [errorModalShow, setErrorModalShow] = useState(false); // Estado para mostrar o modal de erro
+
+     const el = useRef();
+     const tl = useRef();
 
      useEffect(() => {
           carregarPlantasAleatorias();
@@ -92,9 +97,53 @@ export default function Home() {
           }
      }
 
+     // Animações com GSAP
+     useLayoutEffect(() => {
+          gsap.registerPlugin(ScrollTrigger);
+
+          gsap.to("#titleRow", {
+               y: 0,
+               opacity: 1,
+          });
+
+          return () => {
+               ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+          }
+     }, []);
+
+     const cardRefs = useRef([]); // Array de referências para cada card
+     useLayoutEffect(() => {
+          gsap.registerPlugin(ScrollTrigger);
+
+          cardRefs.current.forEach((card, index) => {
+               if (card) {
+                    gsap.fromTo(card, {
+                         opacity: 0,
+                         y: 50,
+                    }, {
+                         opacity: 1,
+                         y: 0,
+                         duration: 1,
+                         scrollTrigger: {
+                              trigger: card,
+                              start: "top 80%", // Inicia quando o card estiver 80% dentro da viewport
+                              end: "bottom 20%", // Termina quando o card estiver 20% fora da viewport
+                              toggleActions: "play none none reverse", // Reproduzir ao entrar, reverter ao sair
+                              markers: true,
+                         },
+                    });
+               }
+          });
+
+          return () => {
+               ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Remove todos os ScrollTriggers ao desmontar o componente
+          };
+     }, [plantasExibidas]);
+
+
      return (
           <div>
-               <div className="container">
+               <div className="container" id="titleContainer" style={{ height: "80vh", marginTop: "5rem" }}>
                     <div className="row" id="titleRow">
                          <div className="col-md-6 align-self-center text-center p-3">
                               <h1 className="display-1 fw-bold d-none d-md-block">Curas de Quintal</h1>
@@ -121,7 +170,7 @@ export default function Home() {
                                              <input
                                                   type="text"
                                                   className="form-control"
-                                                  placeholder="Digite o nome da planta ou do animal"
+                                                  placeholder="Digite o nome da planta"
                                                   value={query}
                                                   onChange={(e) => setQuery(e.target.value)} // Atualiza o estado da query
                                              />
@@ -138,8 +187,8 @@ export default function Home() {
                     <p className="text-center mb-3">Conheça algumas das plantas disponíveis em nosso acervo:</p>
                     <div className="row">
                          {plantasExibidas.map((planta, index) => (
-                              <div className="col-lg-4 mx-auto col-md-6 mb-4" key={planta.id}>
-                                   <div className="card border-0 shadow-lg rounded-5">
+                              <div className="col-lg-4 mx-auto col-md-6 mb-4" key={planta.id} ref={el => cardRefs.current[index] = el}>
+                                   <div className="card border-0 shadow-lg rounded-5" id="plantCard">
                                         <div className="card-body">
                                              <img
                                                   src={carregarImagem(planta.nomePopular)}

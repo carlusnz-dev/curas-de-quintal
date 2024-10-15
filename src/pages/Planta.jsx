@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import plantasData from '../data/plantas.json';
+import '../styles/Planta.css';
 
 const formatarNomeParaCaminho = (nome) => {
      return nome
@@ -34,8 +35,9 @@ const Planta = () => {
      }
 
      return (
-          <div>
-               <h1>{planta.nomePopular} ({planta.nomeCientifico})</h1>
+          <div className="plant-container text-center">
+               <h1>{planta.nomePopular}</h1>
+               <h3>({planta.nomeCientifico})</h3>
                <img src={carregarImagem(planta.nomePopular)} alt={planta.nomePopular} />
                <p><strong>Indicações:</strong> {planta.indicacoes}</p>
                <p><strong>Formas de uso:</strong> {planta.formasUso}</p>
