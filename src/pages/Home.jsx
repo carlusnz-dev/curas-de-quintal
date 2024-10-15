@@ -241,6 +241,25 @@ export default function Home() {
                     </div>
                </div>
 
+               <div className="container mt-5" id="contactContainer">
+                    <div className="row">
+                         <div className="col-md-6 align-self-center">
+                              <h2 className="fw-bold">Contato</h2>
+                              <p className="lead">Entre em contato conosco para tirar dúvidas, fazer sugestões ou solicitar mais informações.</p>
+                              <p><strong>E-mail:</strong>
+                                   <a href="mailto:carlosantunes.dev@gmail.com">carlosantunes.dev@gmail.com</a>
+                              </p>
+                              <p><strong>Telefone:</strong> (74) 99933 9123</p>
+                         </div>
+                         <div className="col-md-6">
+                              <img src={logo} alt="Logotipo do projeto Curas de Quintal" className="img-fluid" />
+                         </div>
+                    </div>
+                    <div className="row">
+                         
+                    </div>
+               </div>
+
                {/* Modal de resultados da busca */}
                <Modal show={modalShow} onHide={() => setModalShow(false)}>
                     <Modal.Header closeButton>
